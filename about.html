@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - LushLocks Elixir</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #fbe4f1, #f3dff5);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a148c, #ff4081);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 50px 50px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: white;
+      color: #4a148c;
+    }
+
+    .about-us {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(255, 64, 129, 0.1);
+      text-align: left;
+    }
+
+    .about-us h2 {
+      color: #4a148c;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-us h3 {
+      color: #ff4081;
+      margin-top: 30px;
+    }
+
+    .about-us ul {
+      padding-left: 20px;
+    }
+
+    .about-us ul li {
+      margin-bottom: 10px;
+    }
+
+    .founder {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+
+
+    .founder p {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    #cta-btn {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(255, 64, 129, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    #cta-btn:hover {
+      background-color: #f50057;
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      .founder {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-us {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LushLocks Elixir</h1>
+    <p>The Magic Hair Oil That Changes Everything!</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-us">
+    <h2>About LushLocks Elixir</h2>
+    <p>
+      LushLocks Elixir was born from a desire to create a product that blends natural beauty with magic! We are passionate about helping people achieve the hair of their dreams.
+    </p>
+
+    <h3>Our Mission</h3>
+    <p>
+      Our mission is simple: To provide haircare that feels like magic while using only the finest ingredients that nature has to offer. We are dedicated to helping you unlock your hair’s full potential!
+    </p>
+
+    <h3>Our Values</h3>
+    <ul>
+      <li>🌿 Natural Ingredients</li>
+      <li>✨ Quality Craftsmanship</li>
+      <li>🌎 Sustainability</li>
+      <li>❤️ Customer Love</li>
+    </ul>
+
+    <h3>Meet the Founder</h3>
+    <div class="founder">
+      <img src="images/founder.jpg" alt="Founder" class="founder-image" />
+      <p>
+        <strong>Emmanuel Mathew Vinod</strong> – Founder & Chief Dreamer<br/>
+        Emmanuel founded LushLocks with a vision to make every person feel confident with gorgeous hair that shines with health and beauty. His passion for natural ingredients and sustainable beauty led him to create this magical elixir!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <button id="cta-btn">Get Yours Now!</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
